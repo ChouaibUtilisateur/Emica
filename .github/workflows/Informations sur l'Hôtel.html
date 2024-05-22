@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Informations sur l'Hôtel - Hôtel La Mamounia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style pour les titres */
+        h2 {
+            font-size: 24px;
+            color: #333; /* Couleur du texte */
+            margin-bottom: 20px; /* Espacement en bas */
+            position: relative; /* Position relative pour l'effet */
+            display: block; /* Affichage en bloc */
+        }
+
+        /* Effet pour les titres */
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #007bff; /* Couleur de la ligne */
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+            transform-origin: bottom right;
+        }
+
+        h2:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Style pour les paragraphes */
+        p {
+            font-size: 16px;
+            color: #666; /* Couleur du texte */
+            margin-bottom: 10px; /* Espacement en bas */
+        }
+    </style>
+</head>
+<body>
+    <h1>Informations sur l'Hôtel</h1>
+
+    <h2>Adresse</h2>
+    <p>Avenue Bab Jdid, Marrakech</p>
+    
+    <h2>Internet</h2>
+    <p>Espaces publics gratuits</p>
+    <p>En chambre gratuit</p>
+    
+    <h2>Politique relative aux enfants</h2>
+    <p>Les enfants sont les bienvenus</p>
+    
+    <h2>Arrivée / Départ</h2>
+    <p>Arrivée à 15h00</p>
+    <p>Départ à midi</p>
+    
+    <h2>Transports et transferts</h2>
+    <p>Transfert soumis à supplément</p>
+    
+    <h2>Politique relative au tabagisme</h2>
+    <p>Espaces publics fumeurs</p>
+    <p>Chambres fumeurs disponibles</p>
+    
+    <h2>Pièces</h2>
+    <p>209 chambres et suites</p>
+    
+    <h2>Équipements dans les chambres</h2>
+    <p>Station d'accueil pour iPod, télévision à écran plat, coffre-fort, minibar, cafetière/théière, journal quotidien gratuit, produits de salle de bain La Mamounia</p>
+    
+    <h2>Toujours inclus dans cet hôtel</h2>
+    <p>Boisson de bienvenue, à l'arrivée</p>
+    <p>Internet gratuit</p>
+    <p>Eau minérale gratuite dans la chambre à l'arrivée</p>
+    <p>Transfert gratuit depuis et vers l'aéroport de Marrakech Menara au départ pour les Suites Prestige, les Suites Signature et les Riads.</p>
+    
+    <h2>Services disponibles</h2>
+    <p>Hôtel climatisé</p>
+    <p>Service de blanchisserie</p>
+    <p>Service de conciergerie</p>
+    <p>Centre d'affaires</p>
+    
+    <h2>Animaux domestiques</h2>
+    <p>Petits chiens acceptés</p>
+    
+    <h2>Parking</h2>
+    <p>Parking / voiturier gratuit</p>
+</body>
+</html>

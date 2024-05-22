@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Nous - Hôtel La Mamounia</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre feuille de style CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #555;
+        }
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 150px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contactez-nous</h1>
+        <p>N'hésitez pas à nous contacter pour toute question ou demande d'informations. Remplissez le formulaire ci-dessous et nous vous répondrons dès que possible.</p>
+        
+        <form action="envoyer_message.php" method="POST"> <!-- Action vers le script PHP qui gère l'envoi du message -->
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" required><br>
+            
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="6" required></textarea><br>
+            
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</body>
+</html>
